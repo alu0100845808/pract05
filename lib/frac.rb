@@ -13,6 +13,9 @@ class Fraccion
  
  
  def initialize(num,denom) #minimiza al construir ^^
+ raise TypeError, "El denominador debe ser mayor que 0" if @denom.eql? 0
+ raise TypeError, "El denominador debe ser un numero" if !@denom.is_a Integer
+ raise TypeError, "El numerador debe ser un numero" if !@num.is_a Integer
   @num=num
   @denom=denom
   maxcomdiv = mcd(@num,@denom)
