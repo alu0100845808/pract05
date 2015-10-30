@@ -6,7 +6,7 @@ class Fracciones
   def mcd(x, y) ## Algoritmo de Euclides
     x, y = x.abs, y.abs
       while y != 0
-        x, y = x, x % y
+        x, y = y, x % y
       end
     x
   end

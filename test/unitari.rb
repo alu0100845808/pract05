@@ -1,5 +1,5 @@
 require "test/unit"
-require "../lib/frac.rb"
+require "lib/frac.rb"
  
 class TestFracciones < Test::Unit::TestCase
   def setup
@@ -8,7 +8,7 @@ class TestFracciones < Test::Unit::TestCase
   end
   
   def test_suma
-    
+    assert_equal("2/3", @dostercios.to_s)
   end
   
   
