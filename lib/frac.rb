@@ -1,4 +1,4 @@
-class Fracciones
+class Fraccion
   attr_reader :num, :denom
  
  
@@ -25,9 +25,10 @@ class Fracciones
  ##suma
   def +(other)
     if other.is_a? Integer then
-		  other = Fraccion.new(other,1)
-		end
-    return Fraccion.new((other.denom * @num) + (@denom * other.num), @denom * other.denom)
+		  return Fraccion.new(other,1)
+		else
+      return Fraccion.new((other.denom * @num)+(@denom * other.num), @denom * other.denom)
+    end
   end
     
     
